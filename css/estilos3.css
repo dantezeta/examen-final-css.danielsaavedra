@@ -5,113 +5,114 @@
 body{
   background-color: #02010a;
   width: 1280px;
-  height: 848px;
+  height: 613px;
 }
 .contenido{
   width: 900px;
   height: 100%;
   margin: auto;
+  animation-name: slideme;
+  animation-duration: 1s;
 }
-#encabezado{
-    width: 100%;
-    height: 180px;
-    background-color: #5b7989;
-    margin: 0% 10% 0% 10%;
-    border-radius: 10px 10px 0px 0px;
-    -mos-border-radius:10px 10px 0px 0px;
-		-webkit-border-radius:10px 10px 0px 0px;
-}
-header h1{
-  height: 25%;
-  width: 40%;
-  font-size: 2.000em; line-height: .6;
-  font-family:"Dancing Script";
-  color:#fff;
-  text-shadow: 1px 2px #02010a;
-  padding: 1% 0% 0% 5%;
-  margin-top: 8%;
-  float: left;
-}
-header ul{
-  color: #fff;
-  list-style:none;
-  padding: 5px 0px 60px 0px;
-  margin: 0;
-}
-header li{
-  width:15%;
-  height: 20px;
-  margin-top:8%;
-  margin-bottom:1%;
-  padding-left: 1%;
-  padding-top: 1%;
-  float: right;
-  text-align: center;
+@keyframes slideme {
+  0% {
+  position: relative;
+  top: 150%;
+ }
+  60% {
+  position: relative;
+  top: -5%;
+  }
+  100% {
+  position: relative;
+  top: 0%;
+  }
+  }
 
+
+/*----------------------------encabezado----------------------*/
+header{
+  height: 90px;
+  background-color: #5b7989;
+  margin-top: 0;
+  border-radius: 10px 10px 0px 0px;
+  -mos-border-radius:10px 10px 0px 0px;
+  -webkit-border-radius:10px 10px 0px 0px;
+  font-family:"Dancing Script";
 }
-header a{
-  overflow: auto;
-  font-size: 1.286em; line-height: .6;
-  padding: 30px 10px 30px 10px;
-  margin:0px;
+.header .container1{
+  width: 900px;
+  height: 100%;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container1 h1{
+  padding-left: 20px;
+  text-shadow: 1px 2px #02010a;
   color: #fff;
-  font-family: "Dancing Script";
+  font-size:30px;
 }
-.enlace {
-  text-decoration: none;
+.nav li{
+  list-style: none;
+  display: inline;
 }
-#caja-amarilla {
-width: 100%;
-height: 488px;
+
+.nav a{
+  padding-right: 20px;
+  color: #fff;
+  font-size:22px;
+}
+.enlace{
+  text-decoration:none;
+}
+/*--------------contenido de nuestra segunda pagina------------------*/
+.caja-amarilla {
+width:100%;
+height:295px;
 background-color: #d5c75f;
-margin: auto;
 display: flex;
 }
 .container-imagenes{
-  width: 100%;
+  width: 300px;
   height: 100%;
-  margin:20px 0px 20px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
-#imagen1 img{
+.container-imagenes img{
+  width: 300px;
+  height: 100%;
+  display: flex;
+  margin: auto;
+  box-shadow:  2px 2px #02010a;
+}
+.imagen1 img{
   width: 80%;
-  margin:0px 0px 40px 30px;
+  height: 115px;
   -webkit-filter: blur(10px); /* Chrome, Safari, Opera */
 	filter: blur(10px);
   }
-#imagen2 img{
+.imagen img{
   width: 80%;
-  margin:0px 0px 40px 30px;
+  height: 115px;
   -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
 	filter: grayscale(100%);
 }
-#imagen3 img{
+.imagen3 img{
   width: 80%;
-  margin: 0px 0px 40px 30px;
+  height: 115px;
   -webkit-filter: sepia(90%); /* Chrome, Safari, Opera */
 	filter: sepia(90%);
 }
-#imagen4 img{
+.imagen5 img{
   width: 80%;
-  margin: 0px 0px 40px 30px;
-  -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
-	filter: grayscale(100%);
+  height: 115px;
 }
-#imagen5 img{
-  width: 80%;
-  margin:0px 0px 40px 30px;
-}
-#imagen6 img{
-  width: 80%;
-  margin: 0px 0px 40px 30px;
-  -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
-	filter: grayscale(100%);
-}
-
 footer{
   width: 100%;
-   max-width: 1170px;
   height: 228px;
-  margin: 0% 10% 0% 10%;
+  margin: auto;
   background-color: #C6d5c5;
   color: black ;
   font-size: 18px;

@@ -1,48 +1,55 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html>
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, user-scalable=no,initial-scalable=1.0">
-    <title>web Comenzando la Fotografia</title>
-      <link rel="stylesheet" href="css/estilos.css">
-      <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet" type='text/css'>
+    <title>inicio</title>
+    <link rel="stylesheet" href="css/estilos1.css">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet" type='text/css'>
   </head>
   <body>
-    <div class="contenido">
-    <header id="encabezado">
-      <h1>Comenzando con la Fotografía</h1>
-      <navbar>
-      <ul>
-        <li><a href="Html/retratos.html">Retratos</a></li>
-        <li><a href="Html/paisajes.html">Paisajes</a></li>
-        <li><a class="enlace" href="Html/inicio.html">Inicio</a></li>
-      </ul>
-      </navbar>
+  <div class="contenido">
+    <header class="header">
+      <div class="container1">
+        <h1>Comenzando con la Fotografia</h1>
+        <div class="nav">
+          <ul>
+            <li class="items"><a class="enlace"href="Html/inicio.html">Inicio</a></li>
+            <li class="items"><a href="Html/paisajes.html">Paisajes</a></li>
+            <li class="items"><a href="Html/retratos.html">Retratos</a></li>
+          </ul>
+        </div>
+      </div>
     </header>
-    <section>
-      <div class="container-imagen1">
-        <div class="imagen1">
-            <img src="img/MAR.jpg" width="100%" height="100%">
-        </div>
+      <!--iniciando el contenido atravez de 2 contenedores-->
+    <section> <!--contenedor imagen1-->
+        <div class="container-imagen1">
+          <div class="imagen1">
+              <img src="img/MAR.jpg" width="100%" height="100%">
           </div>
-    </section>
+        </div>
+    </section><!--contenedor imagen2 y imagen3-->
     <section id="container-imagen2-3">
-        <div class="container-row">
-           <div class="imagen">
-              <img src="img/montaña.jpg" width="100%" height="100%">
-           </div>
-           <div class="titulo1">
-              <h1>Paisajes</h1>
+       <div class="container-row">
+             <div id="imagen1">
+                <img src="img/montaña.jpg" width="100%" height="100%">
+             </div>
+             <div class="titulo">
+               <ul>
+                 <li><a href="Html/paisajes.html">Paisajes</a></li>
+               </ul>
+            </div>
+      </div>
+      <div class="container-row">
+            <div id="imagen2">
+             <img src="img/retrato.jpg" width="100%" height="100%">
           </div>
-        </div>
-         <div class="container-row">
-          <div class="imagen">
-           <img src="img/retrato.jpg" width="100%" height="100%">
-        </div>
-        <div class="titulo2">
-         <h1>Retratos</h1>
-       </div>
-        </div>
+          <div class="titulo">
+            <ul>
+              <li><a href="Html/paisajes.html">Retratos</a></li>
+            </ul>
+         </div>
+      </div>
     </section>
     <footer>
       <div class="container-footer">
@@ -94,6 +101,6 @@
           </div>
       </div>
     </footer>
-      </div>
+    </div>
   </body>
 </html>
