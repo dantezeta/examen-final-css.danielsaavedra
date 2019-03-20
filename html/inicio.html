@@ -9,9 +9,10 @@
   </head>
   <body>
   <div class="contenido">
-    <header class="header">
-      <div class="container1">
+    <header class="encabezado">
+      <div class="titulo1">
         <h1>Comenzando con la Fotografia</h1>
+      </div>
         <div class="nav">
           <ul>
             <li class="items"><a class="enlace"href="inicio.html">Inicio</a></li>
@@ -19,40 +20,39 @@
             <li class="items"><a href="../Html/retratos.html">Retratos</a></li>
           </ul>
         </div>
-      </div>
     </header>
       <!--iniciando el contenido atravez de 2 contenedores-->
-    <section> <!--contenedor imagen1-->
-        <div class="container-imagen1">
-          <div class="imagen1">
-              <img src="../img/MAR.jpg" width="100%" height="100%">
-          </div>
-        </div>
-    </section><!--contenedor imagen2 y imagen3-->
-    <section id="container-imagen2-3">
-       <div class="container-row">
-             <div id="imagen1">
-                <img src="../img/montaña.jpg" width="100%" height="100%">
-             </div>
-             <div class="titulo">
-               <ul>
-                 <li><a href="../Html/paisajes.html">Paisajes</a></li>
-               </ul>
-            </div>
-      </div>
-      <div class="container-row">
-            <div id="imagen2">
-             <img src="../img/retrato.jpg" width="100%" height="100%">
-          </div>
-          <div class="titulo">
-            <ul>
-              <li><a href="../Html/paisajes.html">Retratos</a></li>
-            </ul>
-         </div>
-      </div>
+    <section class="contenido1"> <!--contenedor imagen1-->
+  <div class="container1">
+      <img src="../img/MAR.jpg" width="100%" height="100%">
+  </div>
     </section>
-    <footer>
-      <div class="container-footer">
+    <!--contenedor imagen2 y imagen3-->
+    <section class="contenido2">
+      <div class="container2">
+        <div class="paisaje">
+            <div id="imagen1">
+                <img src="../img/montaña.jpg" width="100%" height="100%">
+            </div>
+            <div class="titulo">
+               <ul>
+                  <li><a href="../Html/paisajes.html">Paisajes</a></li>
+               </ul>
+           </div>
+        </div>
+       <div class="retrato">
+        <div id="imagen2">
+         <img src="../img/retrato.jpg" width="100%" height="100%">
+        </div>
+        <div class="titulo">
+        <ul>
+          <li><a href="../Html/paisajes.html">Retratos</a></li>
+        </ul>
+        </div>
+       </div>
+        </div>
+    </section>
+    <footer class="pie_de_pagina">
          <div class="columna-1">
                <h1>Contactos</h1>
              <div class="mail">
@@ -99,8 +99,7 @@
                 <p>&#169; Copyright-2019</p>
                </div>
           </div>
-      </div>
-    </footer>
+      </footer>
     </div>
   </body>
 </html>

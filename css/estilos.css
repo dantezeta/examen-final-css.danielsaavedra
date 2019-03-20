@@ -64,26 +64,8 @@ header{
 .enlace{
   text-decoration:none;
 }
-@media all and(max-width 400px) {
-  .container1{
-    width:50%;
-    order:1;
-  }
-  .nav{
-    width:40%;
-    order:2;
-  }
-}
-@media all and(max-width 900px) and (min-width 400px) {
-  .container1{
-    width:50%;
-    order:1;
-  }
-  .nav{
-    width:20%;
-    order:2;
-  }
-}
+
+
 
 /*--------------contenido de nuestra primera pagina------------------*/
 
@@ -152,7 +134,6 @@ align-items: center;
 .titulo li{
     list-style: none;
 }
-
 .titulo a{
   height: 0px;
   width: auto;
