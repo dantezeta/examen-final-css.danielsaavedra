@@ -19,21 +19,21 @@ body{
   margin: 0;
   animation-name: slideme;
   animation-duration: 1s;
-  }
+}
 @keyframes slideme {
   0% {
-    position: relative;
-    top: 150%;
+  position: relative;
+  top: 150%;
   }
   60% {
-    position: relative;
-    top: -5%;
+  position: relative;
+  top: -5%;
   }
   100% {
-    position: relative;
-    top: 0%;
+  position: relative;
+  top: 0%;
   }
-}
+  }
 
 .contenido, .container1, .container2, .pie_de_pagina{
   float:left;
@@ -379,7 +379,6 @@ align-items: flex-start;
 .columna-4{
   width: auto;
   height: 22%;
-
 }
 }
 
@@ -503,7 +502,7 @@ align-items: flex-start;
 }
 }
 
-@media screen and (min-width:340px) and (max-width:500px){
+@media screen and (min-width:100px) and (max-width:500px){
   body{
     max-width: 100%;
     min-width: 340px;
