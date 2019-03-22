@@ -20,20 +20,17 @@ body{
   animation-name: slideme;
   animation-duration: 1s;
 }
-@keyframes slideme {
-  0% {
-  position: relative;
-  top: 150%;
-  }
-  60% {
-  position: relative;
-  top: -5%;
-  }
-  100% {
-  position: relative;
-  top: 0%;
-  }
-  }
+  @keyframes slideme {
+0% {
+margin-top: 160%;
+}
+60% {
+margin-top: -5%;
+}
+100% {
+margin-top: 0%;
+}
+}
 
 .contenido, .container1, .container2, .pie_de_pagina{
   float:left;
@@ -97,7 +94,7 @@ header{
   text-decoration:none;
 }
 
-/*--------------contenido de nuestra primera pagina------------------*/
+/*--------------contenido de la primera pagina------------------*/
 
   /*primer container*/
   .container1{
@@ -217,7 +214,7 @@ footer{
    width: auto;
    height: 100%;
    margin: 5px auto;
-   text-decoration: underline;
+   text-decoration: none;
    margin-bottom: 10px;
  }
  .direccion{
@@ -257,7 +254,7 @@ footer{
 .columna-4 p{
   margin-top: 10px;
 }
-/* ---------------------------------------media queries-----------------------------------*/
+/* ---------------------------------------media queries 1 de 3-----------------------------------*/
 @media screen and (min-width:900px) and (max-width: 2000px){
   body{
     max-width: 100%;
@@ -272,6 +269,7 @@ footer{
     width: 900px;
     height: 1000px;
   }
+  /* ---------------------------------encabezado media 1----------------------------*/
   .encabezado{
     width: 100%;
     height: 90px;
@@ -303,6 +301,7 @@ footer{
     display: inline;
     text-align: center;
     }
+    /*-----------------------------container1 media 1------------------------*/
  .container1{
   height:380px;
    width: 100%;
@@ -312,6 +311,7 @@ footer{
   height: 90%;
   width: 80%;
 }
+    /*-----------------------------container2 media 1------------------------*/
 .container2{
   width: 100%;
   height: auto;
@@ -345,6 +345,7 @@ footer{
   width: 80%;
   height: 240px;
 }
+/*------------------------------------footer media 1-----------------------*/
 .pie_de_pagina{
   height: auto;
   width: 100%;
@@ -381,7 +382,7 @@ align-items: flex-start;
   height: 22%;
 }
 }
-
+/*-----------------------------------media queries 2 de 3------------------------*/
 @media screen and (min-width:500px) and (max-width: 900px){
   body{
     max-width: 100%;
@@ -395,6 +396,7 @@ align-items: flex-start;
     width: 669px;
     height: auto;
   }
+  /*-------------------------------encabezado media 2_de 3------------------------*/
   .encabezado{
     width: 100%;
     height: auto;
@@ -422,6 +424,7 @@ align-items: flex-start;
     display: inline;
     text-align: center;
     }
+        /*-----------------------------container1 media 2 de 3------------------------*/
  .container1{
    height:260px;
    width: 100%;
@@ -431,6 +434,7 @@ align-items: flex-start;
   height: 235px;
   width: 80%;
 }
+    /*-----------------------------container2 media 2 de 3------------------------*/
 .container2{
   width: 100%;
   height: auto;
@@ -466,6 +470,7 @@ align-items: flex-start;
   width: 261px;
   height: 230px;
 }
+/*-------------------------------footer media 2 de 3--------------------------*/
 .pie_de_pagina{
   height: auto;
   width: 100%;
@@ -501,11 +506,12 @@ align-items: flex-start;
 
 }
 }
-
+/*-------------------------------------------------media queries 3 de 3----------------------*/
 @media screen and (min-width:100px) and (max-width:500px){
   body{
     max-width: 100%;
     min-width: 340px;
+    height: auto;
   }
   .contenido{
     padding-left: 15px;
@@ -513,6 +519,7 @@ align-items: flex-start;
     width: 90%;
     height: auto;
   }
+  /*------------------------------encabezado media 3 de 3----------------------------*/
   .encabezado{
     width: 100%;
     height: 200px;
@@ -543,15 +550,16 @@ align-items: flex-start;
     display: inline;
     text-align: center;
  }
+     /*-----------------------------container1 media 3 de 3------------------------*/
  .container1{
-   height:180px;
+   height:200px;
    width: 100%;
-   padding: 5px 0px 5px 0px;
 }
 .container1 img{
-  height: 150px;
+  height: 90%;
   width: 80%;
 }
+    /*-----------------------------container2 media 3 de 3------------------------*/
 .container2{
   width: 100%;
   height: 560px;
@@ -585,8 +593,9 @@ align-items: flex-start;
 }
 #imagen2{
   width: 261px;
-  height: 230px;
+  height: 205px;
 }
+/* -----------------------------------footer media 3 de 3 -------------------------*/
 .pie_de_pagina{
   height: 700px;
   width: 100%;
